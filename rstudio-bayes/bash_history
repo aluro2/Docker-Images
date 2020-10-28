@@ -1,0 +1,14 @@
+apt update
+apt list --upgr
+apt list --upgradable
+apt install libcurl4-openssl-dev
+apt install libssl-dev
+apt install make
+apt install pandoc-citeproc
+apt install pandoc
+apt install libssl-dev
+apt install libv8-dev
+# Extra dependencies for igraph R package
+apt install -y libglpk-dev
+apt install -y libgmp3-dev
+apt install -y libxml2-dev
