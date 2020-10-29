@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
 
 # Install R packages
 
-RUN install2.r -s --error -r "https://packagemanager.rstudio.com/all/latest" --ncpus 8 \
+RUN install2.r -s --error -r "https://packagemanager.rstudio.com/all/latest" -n 8 \
  rstan \
  rstanarm \
  brms \
