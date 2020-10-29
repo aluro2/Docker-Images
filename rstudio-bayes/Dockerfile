@@ -1,4 +1,4 @@
-FROM rocker/rstudio:latest
+FROM rocker/rstudio:4.0.2
 LABEL maintainer="alec.b.luro@gmail.com"
 
 # Install packages and dependencies 

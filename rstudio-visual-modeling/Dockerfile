@@ -1,4 +1,4 @@
-FROM rocker/tidyverse:4.0.3
+FROM rocker/tidyverse:4.0.2
 
 # Install packages and dependencies for pavo
 RUN apt-get update && apt-get install -y \
