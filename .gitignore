@@ -37,3 +37,9 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Rstudio files
+.config
+.local/
+.rstudio/
+.bash_history
