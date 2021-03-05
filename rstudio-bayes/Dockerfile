@@ -1,4 +1,4 @@
-FROM rocker/rstudio:latest
+FROM rocker/tidyverse:4.0.4
 LABEL maintainer="alec.b.luro@gmail.com"
 
 # Install packages and dependencies 
