@@ -1,4 +1,4 @@
-FROM rocker/tidyverse:4.0.4
+FROM rocker/tidyverse:4.1.0
 LABEL maintainer="alec.b.luro@gmail.com"
 
 # Install packages and dependencies 
