@@ -13,6 +13,6 @@ RUN apt-get update && apt-get install -y \
   && install2.r --error \
     -r "https://packagemanager.rstudio.com/all/__linux__/focal/latest" \
     pavo \
-    && apt-get autoclean \
+  && apt-get autoclean \
   && apt-get clean \
   && apt-get autoremove
