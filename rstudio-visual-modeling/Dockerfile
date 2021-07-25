@@ -8,8 +8,10 @@ RUN apt-get update && apt-get install -y \
     imagemagick \
     libmagick++-dev \
     tcl8.6-dev \
-    tk8.6-dev
-
-# Install R packages
-
-RUN R -e "devtools::install_version('pavo', version = '2.4.0', repos='http://cran.us.r-project.org', clean = T, Ncpus = 6, quick = T)" 
+    tk8.6-dev \
+      # Install R packages directly from rstudio repo
+  && install2.r --error \
+    -r "https://packagemanager.rstudio.com/all/__linux__/focal/latest" \
+    pavo \  && apt-get autoclean \
+  && apt-get clean \
+  && apt-get autoremove
